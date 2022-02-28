@@ -5,7 +5,7 @@ if(process.env.NODE_ENV === 'development') {
   app.use(errorHandler())  
 }
 
-const server = app.listen(3000, () => {
+const server = app.listen(app.get('port'), () => {
   console.log(
     '  App is running at http://localhost:%d in %s mode',
     app.get('port'),
