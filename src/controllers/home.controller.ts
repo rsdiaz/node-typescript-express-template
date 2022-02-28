@@ -5,5 +5,5 @@ import { Request, Response } from 'express'
  * @route GET /
  */
 export const index = (req: Request, res: Response) => {
-  res.status(200).send('kjhjh')
+  res.status(200).send('Express TypeScript Template')
 }
